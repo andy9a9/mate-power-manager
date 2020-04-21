@@ -545,6 +545,54 @@
                     <property name="position">1</property>
                   </packing>
                 </child>
+                <child>
+                   <object class="GtkVBox" id="vbox_battery_keyboard">
+                      <property name="visible">True</property>
+                      <property name="orientation">vertical</property>
+                      <property name="spacing">6</property>
+                      <child>
+                         <object class="GtkLabel" id="label_battery_keyboard_sect">
+                            <property name="visible">True</property>
+                            <property name="xalign">0</property>
+                            <property name="label" translatable="yes">&lt;b&gt;Keyboard&lt;/b&gt;</property>
+                            <property name="use_markup">True</property>
+                         </object>
+                         <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">False</property>
+                            <property name="position">0</property>
+                         </packing>
+                      </child>
+                      <child>
+                         <object class="GtkAlignment" id="alignment49">
+                            <property name="visible">True</property>
+                            <property name="left_padding">12</property>
+                            <child>
+                               <object class="GtkVBox" id="vbox89">
+                                  <property name="visible">True</property>
+                                  <property name="orientation">vertical</property>
+                                  <property name="spacing">5</property>
+                                  <child>
+                                     <object class="GtkCheckButton" id="checkbutton_battery_keyboard_reduce">
+                                        <property name="label" translatable="yes">_Reduce keyboard backlight</property>
+                                        <property name="visible">True</property>
+                                        <property name="can_focus">True</property>
+                                        <property name="receives_default">False</property>
+                                        <property name="use_underline">True</property>
+                                        <property name="draw_indicator">True</property>
+                                     </object>
+                                     <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">False</property>
+                                        <property name="position">0</property>
+                                     </packing>
+                                  </child>
+                               </object>
+                            </child>
+                         </object>
+                      </child>
+                   </object>
+                </child>
               </object>
               <packing>
                 <property name="position">1</property>
@@ -585,7 +633,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkAlignment" id="alignment49">
+                      <object class="GtkAlignment" id="alignment50">
                         <property name="visible">True</property>
                         <property name="left_padding">12</property>
                         <child>
@@ -718,7 +766,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkAlignment" id="alignment50">
+                      <object class="GtkAlignment" id="alignment51">
                         <property name="visible">True</property>
                         <property name="left_padding">12</property>
                         <child>

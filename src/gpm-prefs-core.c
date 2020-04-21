@@ -559,6 +559,10 @@ prefs_setup_battery (GpmPrefs *prefs)
 	g_settings_bind (prefs->priv->settings, GPM_SETTINGS_IDLE_DIM_BATT,
 			 widget, "active",
 			 G_SETTINGS_BIND_DEFAULT);
+	widget = GTK_WIDGET (gtk_builder_get_object (prefs->priv->builder, "checkbutton_battery_keyboard_reduce"));
+	g_settings_bind (prefs->priv->settings, GPM_SETTINGS_KBD_BACKLIGHT_BATT_REDUCE,
+			 widget, "active",
+			 G_SETTINGS_BIND_DEFAULT);
 
 	if (prefs->priv->has_button_lid == FALSE) {
 		widget = GTK_WIDGET (gtk_builder_get_object (prefs->priv->builder, "hbox_battery_lid"));
